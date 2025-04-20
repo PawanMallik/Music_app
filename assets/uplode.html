@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <form class="formm" action="uplode.php" method="POST" enctype="multipart/form-data">
+    <input type="text" name="title" placeholder="Song Title" required><br>
+    <input type="text" name="artist" placeholder="Artist Name" required><br>
+    <!-- <textarea name="lyrics" placeholder="Lyrics" required></textarea><br> -->
+  <div class="mp">
+    <label>MP3 File:</label>
+    <input type="file" name="song" accept="audio/mpeg,audio/*" required>
+  </div>
+  <div class="cover">
+    <label>Cover Image:</label>
+    <input type="file" name="cover" accept="image/*" required>
+  </div>
+  
+    <button type="submit">Upload Song</button>
+  </form>
+  
+</body>
+</html>

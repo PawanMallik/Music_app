@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff8282;
+}
+/*  
+  body.light {
+    background-color: black;
+    color: white;
+  }
+
+  body.light .player {
+    background: black;
+    box-shadow: 0 0 10px white;
+  }
+
+  i{
+    background-color: transparent;
+  }
+  body.light .lyrics {
+    color: #00f;
+  } */
+
+.bg {
+  /* background-color: red; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player {
+  background-color: #ff6363;
+  color: white;
+  height: 500px;
+  width: 300px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px #ff6363;
+}
+
+.track {
+  /* background-color: yellow; */
+  height: 60%;
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.track img {
+  /* background-color: aqua; */
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid #ff8282;
+  margin-block: 20px;
+}
+
+.track h2 {
+  height: 10%;
+  /* font-size: 1em; */
+
+}
+.track p {
+  height: 10%;
+}
+.lyrics {
+  height: 50px;
+  /* background-color: gray; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  /* background-color: red; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.controls div {
+  /* background-color: yellow; */
+  background: white;
+
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgb(255, 26, 26, 0.22);
+  color: #f53192;
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.7);
+  background: #f53192;
+  color: white;
+}
+
+h6 {
+  /* background-color: #00f; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 6px;
+  background: #f53192;
+  cursor: pointer;
+  margin: 40px 0px;
+  /* background-color: re; */
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0px 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.formm{
+  background-color: #f53192 ;
+  height: 400px;
+  width: 300px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 9px;
+  box-shadow: 0px 0px 20px black;
+  /* gap: 20px; */
+}
+
+.mp{
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mp label{
+  /* background-color: red; */
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover{
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.cover label{
+  /* background-color: red; */
+  width: 120px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formm input{
+  height: 45px;
+  width: 90%;
+  border-radius: 25px;
+  border: none;
+  padding-left: 10px;
+
+}
+
+
+
+.formm button{
+  height: 45px;
+  width: 90%;
+  border-radius: 25px;
+  border: none;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button{
+  /* background-color: green; */
+  height: 40px;
+  width: 70%;
+  border-radius: 25px;
+  border: none;
+}
+
+
+@media (max-width: 500px) {
+  body {
+    background-color: black;
+  }
+
+  
+  .player {
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px 0px;
+    justify-content: center;
+  }
+
+  .controls div{
+    height: 60px;
+    width: 60px;
+  }
+  .controls{
+    /* background-color: red; */
+    height: 150px;
+  }
+
+  .formm{
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px 0px;
+  }
+
+  .track h2{
+    /* background-color: red; */
+    margin-bottom: 20px;
+  }
+}

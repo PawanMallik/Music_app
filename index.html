@@ -1,0 +1,38 @@
+<!-- resso-style-player.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resso Style Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="player" id="player">
+    <div class="track">
+      <img id="cover" src="" alt="cover" />
+     
+      <h2 id="song-title">Song Title</h2>
+      <p id="song-artist">Artist Name</p>
+    </div>
+    <audio id="audio"   >
+
+    </audio>
+    <!-- <div class="lyrics" id="lyrics">Loading lyrics...</div> -->
+    <input type="range" value="0" id="progress">
+    <div class="controls">
+      <div onclick="prevSong()"><i class='fas fa-angle-left' ></i></div>
+      <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+      <div onclick="nextSong()"><i class='fas fa-angle-right'></i></div>
+    </div>
+  
+    <h6>to uplode your favourite songs 👉<a href="./assets/uplode.html">click here</a></h6>
+  </div>
+
+
+<script src="./js/main.js"></script>
+
+</body>
+</html>
